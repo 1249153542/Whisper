@@ -1,0 +1,8 @@
+2025-08-10 16:11:02,975 [INFO] Scanning folder: SampleClips
+2025-08-10 16:11:02,976 [INFO] Found 2 media files to transcribe.
+2025-08-10 16:11:02,976 [INFO] Preparing to transcribe SampleClips/columbia.wma...
+2025-08-10 16:11:02,976 [INFO] DRY RUN: Would execute the following command:
+2025-08-10 16:11:02,976 [INFO] ./whisper_cpp --model models/ggml-base.en.bin --language auto --threads 4 --offset-t-ms 0 --offset-n 0 --duration-ms 0 --max-context -1 --max-len 0 --word-thold 0.01 --output-txt -f SampleClips/columbia.wma
+2025-08-10 16:11:02,976 [INFO] Preparing to transcribe SampleClips/jfk.wav...
+2025-08-10 16:11:02,977 [INFO] DRY RUN: Would execute the following command:
+2025-08-10 16:11:02,977 [INFO] ./whisper_cpp --model models/ggml-base.en.bin --language auto --threads 4 --offset-t-ms 0 --offset-n 0 --duration-ms 0 --max-context -1 --max-len 0 --word-thold 0.01 --output-txt -f SampleClips/jfk.wav
