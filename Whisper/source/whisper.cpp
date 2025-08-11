@@ -1,5 +1,6 @@
 ﻿#define WHISPER_BUILD
 #include "whisper.h"
+#include "dummy_tracing.h"
 
 #include "ggml.h"
 
@@ -1183,7 +1184,7 @@ static bool whisper_encode(
 
         struct ggml_context * ctxL = ggml_init(paramsL);
 
-		Tracing::delayTensor( { "enc.layer[ %i ].in", il }, inpL );
+		Tracing::delayTensor( { "enc.layer.in" }, inpL );
 
         // norm
         {

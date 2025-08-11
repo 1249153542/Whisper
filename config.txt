@@ -1,0 +1,43 @@
+[General]
+# A comma-separated list of media file extensions to transcribe.
+media_extensions = .wav,.mp3,.mp4,.wma,.mov
+
+# The output format for the transcription.
+# The C++ executable supports txt, vtt, and srt.
+# The python script will use this to determine the output file extension.
+output_format = txt
+
+[WhisperParams]
+# Path to the whisper model file.
+model = models/ggml-base.en.bin
+
+# Spoken language ('auto' for auto-detect).
+language = auto
+
+# Number of threads to use during computation.
+threads = 4
+
+# Translate from source language to english.
+translate = false
+
+# Speed up audio by x2 (reduced accuracy).
+speed_up = false
+
+# For other boolean flags, like diarize, print_special, etc.,
+# if the key is present and the value is "true", the flag will be added.
+# If the key is not present or the value is "false", the flag will be omitted.
+diarize = false
+print_special = false
+print_colors = false
+print_progress = false
+no_timestamps = false
+output_vtt = false
+output_srt = false
+output_wts = false
+prompt =
+offset_t_ms = 0
+offset_n = 0
+duration_ms = 0
+max_context = -1
+max_len = 0
+word_thold = 0.01
